@@ -52,25 +52,6 @@ function App() {
               <li>
                 <a href="projects.html">Projects</a>
               </li>
-              <li className="dropdown">
-                <a href="#" className="dropdown-toggle" data-toggle="dropdown">
-                  Pages <b className="caret"></b>
-                </a>
-                <ul className="dropdown-menu">
-                  <li>
-                    <a href="sidebar-right.html">Right Sidebar</a>
-                  </li>
-                  <li>
-                    <a href="#">Dummy Link1</a>
-                  </li>
-                  <li>
-                    <a href="#">Dummy Link2</a>
-                  </li>
-                  <li>
-                    <a href="#">Dummy Link3</a>
-                  </li>
-                </ul>
-              </li>
               <li>
                 <a href="contact.html">Contact</a>
               </li>

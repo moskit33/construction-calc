@@ -1,6 +1,8 @@
 import "./App.css";
 import AwesomeSlider from "react-awesome-slider";
-import "react-awesome-slider/dist/styles.css";
+import withAutoplay from "react-awesome-slider/dist/autoplay";
+import CoreStyles from "react-awesome-slider/src/core/styles.scss";
+import AnimationStyles from "react-awesome-slider/src/styled/fold-out-animation/fold-out-animation.scss";
 import slide1 from "./assets/images/slides/slide1.jpg";
 import slide2 from "./assets/images/slides/slide2.jpg";
 import slide3 from "./assets/images/slides/slide3.jpg";
@@ -14,7 +16,7 @@ import pic7 from "./assets/images/pic/pic-7.jpg";
 import pic8 from "./assets/images/pic/pic-8.jpg";
 
 // assets/images/pic/pic-5.jpg
-
+const AutoplaySlider = withAutoplay(AwesomeSlider);
 function App() {
   return (
     <div>
@@ -60,11 +62,17 @@ function App() {
         </div>
       </div>
       <header id="head">
-        <AwesomeSlider>
+        <AutoplaySlider
+          animation="foldOutAnimation"
+          cssModule={[CoreStyles, AnimationStyles]}
+          play={true}
+          cancelOnInteraction={false} // should stop playing on user interaction
+          interval={6000}
+        >
           <div data-src={slide1} />
           <div data-src={slide2} />
           <div data-src={slide3} />
-        </AwesomeSlider>
+        </AutoplaySlider>
       </header>
       <section id="search">
         <div className="search-panel">

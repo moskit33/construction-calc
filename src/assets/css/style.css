@@ -86,6 +86,7 @@ label {
   font-weight: 300;
   position: relative;
   background-position-x: center;
+  overflow: hidden;
 }
 #head.secondary {
   height: 100px;

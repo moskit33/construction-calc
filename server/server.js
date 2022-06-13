@@ -13,11 +13,11 @@ app.get("*", (req, res) => {
 });
 app.post("/send-email", async function (req, res) {
   let transporter = nodeMailer.createTransport({
-    host: "smtp.mailtrap.io",
-    port: 2525,
+    host: "smtp.gmail.com",
+    port: 587,
     auth: {
-      user: "334a7ca329f80f",
-      pass: "24dbdfa31c38bf",
+      user: "moskit544@gmail.com",
+      pass: "uzkwbiiqkvwnstdd",
     },
   });
   let mailOptions = {

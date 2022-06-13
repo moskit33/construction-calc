@@ -33,9 +33,9 @@ function App() {
               <span className="icon-bar"></span>
               <span className="icon-bar"></span>
             </button>
-            <a className="navbar-brand" href="index.html">
+            {/* <a className="navbar-brand" href="index.html">
               <img src={logo} alt="Techro HTML5 template" />
-            </a>
+            </a> */}
           </div>
           <div className="navbar-collapse collapse">
             <ul className="nav navbar-nav pull-right mainNav">

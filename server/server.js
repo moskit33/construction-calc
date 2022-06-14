@@ -20,12 +20,13 @@ app.post("/send-email", async function (req, res) {
       pass: "uzkwbiiqkvwnstdd",
     },
   });
+  console.log("BACKEND REQ", req.body);
   let mailOptions = {
-    from: '"Fred Foo 👻" <foo@example.com>', // sender address
-    to: "moskit544@gmail.com, constructioncalculator97@mail.ru", // list of receivers
-    subject: "Hello ✔", // Subject line
-    text: "Hello world?", // plain text body
-    html: "<b>Hello world?</b>", // html body
+    from: '"Строительная компания" <foo@example.com>', // sender address
+    to: req.body.email, // list of receivers
+    subject: "Заявка строительной компании", // Subject line
+    text: `Добрый день ${req.body.firstName} ${req.body.lastName}! Вы оставили заяку на нашем сайте`, // plain text body
+    html: `<b>Добрый день ${req.body.firstName} ${req.body.lastName}! Вы оставили заяку на нашем сайте</b>`, // html body
   };
 
   let info = await transporter.sendMail(mailOptions);
@@ -35,6 +36,7 @@ app.post("/send-email", async function (req, res) {
 
   // Preview only available when sending through an Ethereal account
   console.log("Preview URL: %s", nodeMailer.getTestMessageUrl(info));
+  res.send(200);
 });
 app.listen(port, () => {
   console.log("Server is up!");

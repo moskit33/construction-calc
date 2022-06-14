@@ -80,13 +80,15 @@ label {
   /*background: #181015 url( ../images/bg_header.jpg) no-repeat;*/
   background-size: cover;
   height: 100%;
-  max-height: 750px;
+  max-height: 70vh;
   text-align: center;
   color: white;
   font-weight: 300;
   position: relative;
   background-position-x: center;
   overflow: hidden;
+  padding-top: 100px;
+  background: #2f2f2f;
 }
 #head.secondary {
   height: 100px;
@@ -642,6 +644,9 @@ footer ul li {
 .secpadding {
   padding: 15px 0;
 }
+.secpadding--about {
+  padding-top: 100px;
+}
 .btm-section {
   background: #282828;
   margin-top: 30px;
@@ -667,6 +672,22 @@ footer ul li {
 .search-panel .form-group {
   margin: 0 5px 20px 5px;
   position: relative;
+}
+.search-panel .form-group--email {
+  display: flex;
+  margin-bottom: 20px;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.search-panel .form-group--email label {
+  margin-bottom: 15px;
+  color: #fff;
+  font-weight: 500;
+  font-size: 15px;
+}
+.search-panel .form-group--email input {
+  width: 100%;
+  max-width: 350px;
 }
 /* Form */
 
@@ -1070,6 +1091,13 @@ nav#filter a.current {
 }
 
 @media (max-width: 767px) {
+  .navbar-collapse .mainNav {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .navbar-collapse .mainNav a {
+    font-size: 15px;
+  }
   .navbar-collapse ul {
     text-align: right;
     margin-right: 0px;
@@ -1119,4 +1147,14 @@ nav#filter a.current {
     font-size: 19px;
     font-weight: 400;
   }
+}
+
+.map {
+  height: 430px;
+  position: relative;
+  outline: none;
+  width: 100%;
+  margin: auto;
+  max-width: 700px;
+  margin-bottom: 40px;
 }

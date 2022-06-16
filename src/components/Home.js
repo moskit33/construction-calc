@@ -7,13 +7,15 @@ import AnimationStyles from "react-awesome-slider/src/styled/fold-out-animation/
 import slide1 from "../assets/images/slides/slide1.jpg";
 import slide2 from "../assets/images/slides/slide2.jpg";
 import slide3 from "../assets/images/slides/slide3.jpg";
-import news2 from "../assets/images/news2.jpg";
-import news3 from "../assets/images/news3.jpg";
-import news4 from "../assets/images/news4.jpg";
-import pic5 from "../assets/images/pic/pic-5.jpg";
-import pic6 from "../assets/images/pic/pic-6.jpg";
-import pic7 from "../assets/images/pic/pic-7.jpg";
-import pic8 from "../assets/images/pic/pic-8.jpg";
+import build_h_1 from "../assets/images/build_h_1.jpg";
+import build_m_1 from "../assets/images/build_m_1.jpg";
+import build_m_2 from "../assets/images/build_m_2.jpg";
+import hotel_1 from "../assets/images/hotel_1.jpg";
+import hotel_2 from "../assets/images/hotel_2.jpg";
+import design_1 from "../assets/images/design_1.jpg";
+import design_2 from "../assets/images/design_2.jpg";
+import design_3 from "../assets/images/design_3.jpg";
+import land_design_1 from "../assets/images/land_design_1.jpg";
 
 const AutoplaySlider = withAutoplay(AwesomeSlider);
 
@@ -117,173 +119,146 @@ function Home() {
           <div className="row">
             <div className="col-md-12">
               <div className="title-box clearfix ">
-                <h2 className="title-box_primary">Welcome</h2>
+                <h2 className="title-box_primary">ПОРТФОЛИО</h2>
               </div>
-              <p>
-                Perspiciatis unde omnis iste natus error sit voluptatem. Cum
-                sociis natoque penatibus et magnis dis parturient montes ascetur
-                ridiculus musull dui. Lorem ipsumulum aenean noummy endrerit
-                mauris. Cum sociis natoque penatibuLorem ipsumulum aenean noummy
-                endrerit mauris. Cum sociis natoque penatibus et magnis dis
-                parturient montes ascetur ridiculus mus. Null dui. Fusce feugiat
-                malesuada odio.
-              </p>
-              <p>
-                penatibus et magnis dis parturient montes ascetur ridiculus
-                musull dui. Lorem ipsumulum aenean noummy endrerit mauris. Cum
-                sociis natoque penatibuLorem ipsumulum aenean noummy endrerit
-                mauris. Cum sociis natoque penatibus et magnis dis parturient
-                montes ascetur ridiculus mus. Null dui. Fusce feugiat malesuada
-                odio.
-              </p>{" "}
+              <ul className="linked-list">
+                <li><a href="#section1">Многоэтажные здания</a></li>
+                <li><a href="#section2">Малоэтажные жилые дома</a></li>
+                <li><a href="#section3">Гостиницы</a></li>
+                <li><a href="#section4">Дизайн интерьеров</a></li>
+                <li><a href="#section5">Ландшафтный дизайн</a></li>
+              </ul>
             </div>
           </div>
         </div>
       </section>
-      <section className="news-box">
+      <section className="news-box" id="section1">
         <div className="container">
           <h2>
-            <span>Current projects</span>
+            <span>Многоэтажные здания</span>
           </h2>
           <div className="row">
-            <div className="col-md-4 col-sm-6 col-xs-12">
+            <div className="col-md-12 col-sm-12 col-xs-12">
               <div className="thumbnail thumbnail4">
-                <img src={news2} alt="" />
-
+                <img src={build_h_1} alt="" />
                 <div className="caption">
-                  <h4>
-                    <a href="#">Aliquam eu aliquet quam</a>
-                  </h4>
-
-                  <p>
-                    Souvlaki ignitus carborundum e pluribus unumfacto lingo est
-                    igpay atinlay arquee selectus. non provisio incongruous
-                    feline nolo contendre. Gratuitous octopus niacin, sodium
-                    glutimate. Quote meon
-                  </p>
-                  <a href="#" data-title="Read More" className="btn-link">
-                    <span>Read More</span>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div className="col-md-4 col-sm-6 col-xs-12">
-              <div className="thumbnail thumbnail4">
-                <img src={news3} alt="" />
-
-                <div className="caption">
-                  <h4>
-                    <a href="#">Factorial non deposit</a>
-                  </h4>
-
-                  <p>
-                    Enumfacto lingo est igpay atinlay arquee selectus. non
-                    provisio incongruous feline nolo contendre. Grat uitous
-                    octopus niacin, sodium glutimate. Quote meon an estimate et
-                    non interruptus stad
-                  </p>
-                  <a href="#" data-title="Read More" className="btn-link">
-                    <span>Read More</span>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div className="col-md-4 col-sm-6 col-xs-12">
-              <div className="thumbnail thumbnail4">
-                <img src={news4} alt="" />
-
-                <div className="caption">
-                  <h4>
-                    <a href="#">Deposit quid proquo</a>
-                  </h4>
-
-                  <p>
-                    Arquee selectus non provisio incongruous feline nolo
-                    contendre. Gratuitous octopus niacin, sodium gluti mate.
-                    Quote meon an estimate et non interruptus stad ium. Sic
-                    tempus fugit esperanto
-                  </p>
-                  <a href="#" data-title="Read More" className="btn-link">
-                    <span>Read More</span>
-                  </a>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <section id="packages" className="secpadding">
+      <section className="news-box" id="section2">
         <div className="container">
           <h2>
-            <span>Completed Projects</span>
+            <span>Малоэтажные жилые дома</span>
           </h2>
-
           <div className="row">
-            <div className="col-md-3 col-sm-6">
-              <div className="cuadro_intro_hover ">
-                <p>
-                  <img src={pic5} className="img-responsive" alt="" />
-                </p>
+            <div className="col-md-6 col-sm-6 col-xs-12">
+              <div className="thumbnail thumbnail4">
+                <img src={build_m_1} alt="" />
+
                 <div className="caption">
-                  <div className="blur"></div>
-                  <div className="caption-text">
-                    <h3>Project Name</h3>
-                    <a className=" btn btn-default" href="#"></a>
-                  </div>
+                  <h4>Двух этажный жилой дом в городе Бишкек
+                  </h4>
                 </div>
               </div>
             </div>
-            <div className="col-md-3  col-sm-6">
-              <div className="cuadro_intro_hover ">
-                <p>
-                  <img src={pic6} className="img-responsive" alt="" />
-                </p>
+            <div className="col-md-6 col-sm-6 col-xs-12">
+              <div className="thumbnail thumbnail4">
+                <img src={build_m_2} alt="" />
+
                 <div className="caption">
-                  <div className="blur"></div>
-                  <div className="caption-text">
-                    <h3>Project Name</h3>
-                    <a className=" btn btn-default" href="#">
-                      $4600
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="col-md-3  col-sm-6">
-              <div className="cuadro_intro_hover ">
-                <p>
-                  <img src={pic7} className="img-responsive" alt="" />
-                </p>
-                <div className="caption">
-                  <div className="blur"></div>
-                  <div className="caption-text">
-                    <h3>Project Name</h3>
-                    <a className=" btn btn-default" href="#">
-                      $4600
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="col-md-3  col-sm-6">
-              <div className="cuadro_intro_hover ">
-                <p>
-                  <img src={pic8} className="img-responsive" alt="" />
-                </p>
-                <div className="caption">
-                  <div className="blur"></div>
-                  <div className="caption-text">
-                    <h3>Project Name</h3>
-                    <a className=" btn btn-default" href="#">
-                      $4600
-                    </a>
-                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </section>
+      <section className="news-box" id="section3">
+        <div className="container">
+          <h2>
+            <span>Гостиницы</span>
+          </h2>
+          <div className="row">
+            <div className="col-md-6 col-sm-6 col-xs-12">
+              <div className="thumbnail thumbnail4">
+                <img src={hotel_1} alt="" />
+
+                <div className="caption">
+                </div>
+              </div>
+            </div>
+            <div className="col-md-6 col-sm-6 col-xs-12">
+              <div className="thumbnail thumbnail4">
+                <img src={hotel_2} alt="" />
+
+                <div className="caption">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="news-box" id="section4">
+        <div className="container">
+          <h2>
+            <span>Дизайн интерьеров</span>
+          </h2>
+          <div className="row">
+            <div className="col-md-6 col-sm-6 col-xs-12">
+              <div className="thumbnail thumbnail4">
+                <img src={design_1} alt="" />
+
+                <div className="caption">
+                  <h4>ПОДЬЕЗД
+                  </h4>
+                </div>
+              </div>
+            </div>
+            <div className="col-md-6 col-sm-6 col-xs-12">
+              <div className="thumbnail thumbnail4">
+                <img src={design_2} alt="" />
+
+                <div className="caption">
+                  <h4>КВ №3
+                  </h4>
+                </div>
+              </div>
+            </div>
+            <div className="col-md-6 col-sm-6 col-xs-12">
+              <div className="thumbnail thumbnail4">
+                <img src={design_3} alt="" />
+
+                <div className="caption">
+                  <h4>ДИЗАЙН КВАРТИРЫ ПОДБОРКА ОБОЕВ
+                  </h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="news-box" id="section5">
+        <div className="container">
+          <h2>
+            <span>Ландшафтный дизайн</span>
+          </h2>
+          <div className="row">
+            <div className="col-md-12 col-sm-12 col-xs-12">
+              <div className="thumbnail thumbnail4">
+                <img src={land_design_1} alt="" />
+
+                <div className="caption">
+                  <h4>ЛАНДШАФТ МЭЭРИМ ЖМ ЫНТЫМАК
+                  </h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section className="btm-section secpadding">
         <div className="container">
           <div className="row">
@@ -426,29 +401,6 @@ function Home() {
         <div className="footer2">
           <div className="container">
             <div className="row">
-              <div className="col-md-6 panel">
-                <div className="panel-body">
-                  <p className="simplenav">
-                    <a href="index.html">Home</a> |
-                    <a href="about.html">About</a> |
-                    <a href="services.html">Services</a> |
-                    <a href="price.html">Price</a> |
-                    <a href="projects.html">Projects</a> |
-                    <a href="contact.html">Contact</a>
-                  </p>
-                </div>
-              </div>
-
-              <div className="col-md-6 panel">
-                <div className="panel-body">
-                  <p className="text-right">
-                    Copyright &copy; 2015. Template by{" "}
-                    <a href="http://webthemez.com/" rel="develop">
-                      WebThemez.com
-                    </a>
-                  </p>
-                </div>
-              </div>
             </div>
           </div>
         </div>

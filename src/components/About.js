@@ -65,7 +65,6 @@ function About() {
       <section>
         <div className="container">
           <div className="row">
-            <div id="map" className="map"></div>
           </div>
         </div>
       </section>

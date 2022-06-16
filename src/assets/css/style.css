@@ -7,6 +7,9 @@ Licence: Creative Commons Attribution 3.0** - http://creativecommons.org/license
 */
 @import url(http://fonts.googleapis.com/css?family=Oswald:400,700);
 @import url(http://fonts.googleapis.com/css?family=Lato:400,700);
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: "Lato", sans-serif;
   font-weight: normal;
@@ -240,6 +243,7 @@ ul,
   background: #ececec;
   border-top: 6px solid #ff822f;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.54);
+  margin-bottom: 20px;
 }
 .thumbnail .caption:hover {
 }
@@ -1157,4 +1161,13 @@ nav#filter a.current {
   margin: auto;
   max-width: 700px;
   margin-bottom: 40px;
+}
+.linked-list{
+  list-style: disc;
+  padding-left: 25px;
+
+}
+.linked-list li a{
+  font-size: 16px;
+  cursor: pointer;
 }
